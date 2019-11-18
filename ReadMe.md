@@ -109,6 +109,8 @@ Args:
 =================================================================
 ```
 
+You can find a toy ffm formatted data set on **./data/toy.ffm**.
+
 Then you could refer to the demo notebook to do your own experiments on other data sets ^ ^
 
 
