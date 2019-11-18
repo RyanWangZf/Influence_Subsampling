@@ -35,9 +35,11 @@ If you find this work interesting or helpful for your research, please consider 
 
 ## Introduction
 
+In practice, it is common that some of the collected data are not good or even harmful for our model. On the other, sometimes the data distribution is not stable. There often lies distribution shift between the training set and the test set, causing the degradation performance of the classical supervised machine learning algorithms.
+
 ### Intuition Demonstration
 
-In practice, it is common that some of the collected data are not good or even harmful for our model. Subsampling tries to build a tool to quantify each data’s quality, thereby keeping good examples and dropping bad examples to improve model’s generalization ability. Previous works concentrate on *Weighted* subsampling, that is, trying to maintain the model performance when dropping several data. 
+Subsampling tries to build a tool to quantify each data’s quality, thereby keeping good examples and dropping bad examples to improve model’s generalization ability. Previous works concentrate on *Weighted* subsampling, that is, trying to maintain the model performance when dropping several data. 
 
 By contrast, our work attempts to obtain a superior model by subsampling. 
 
@@ -45,7 +47,7 @@ The different between them can be shown as the image below:
 
 <br/>
 <p align="center"><img width="100%" src="figure/fig1.png" /></p>
-- **(a)** means if the blue points (training samples) within the red circle are removed, the new optimal decision boundary is still same as the former one
+-  **(a)** means if the blue points (training samples) within the red circle are removed, the new optimal decision boundary is still same as the former one
 
 - **(b)** if removing blue points in the red circle, the new decision boundary shifts from the left, while achieves better performance on the Te set
 <br/>
@@ -53,7 +55,19 @@ The different between them can be shown as the image below:
 ### Main Framework
 <br/>
 The main process of doing subsampling is as follows:
-<p align="center"><img width="80%" src="figure/fig2.png" /></p>
+
+- **(a)** first train a model on the full data set
+
+- **(b)** compute the *influence function* (IF) for each sample in training set
+
+- **(c)** compute the sampling probability of each sample in training set 
+
+- **(d)** doing subsampling and train a subset-model and the reduced data set
+
+  
+
+<p align="center"><img width="70%" src="figure/fig2.png" /></p>
+
 <br/>
 
 
@@ -61,3 +75,9 @@ The main process of doing subsampling is as follows:
 ## Usage & Demo
 
 todo
+
+
+
+## Acknowledgement
+
+This work was mainly done while the first author Zifeng Wang did a research internship at [Noah's Ark Lab, Huawei](http://www.noahlab.com.hk/). We especially thank the insights and advice from Professor [Chih-Jen Lin](https://www.csie.ntu.edu.tw/~cjlin/) for the theory and writing of this work.
