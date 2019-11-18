@@ -47,7 +47,6 @@ The different between them can be shown as the image below:
 
 <br/>
 <p align="left"><img width="100%" src="figure/fig1.png" /></p>
-
 -  **(a)** means if the blue points (training samples) within the red circle are removed, the new optimal decision boundary is still same as the former one
 
 - **(b)** if removing blue points in the red circle, the new decision boundary shifts from the left, while achieves better performance on the Te set
@@ -68,7 +67,6 @@ The main process of doing subsampling is as follows:
   
 
 <p align="left"><img width="70%" src="figure/fig2.png" /></p>
-
 <br/>
 
 
@@ -92,10 +90,24 @@ MNIST: Result Summary on Te (ACC and AUC)
 
 ### For other data sets
 
-#### TODO
+For other data sets, we provide a simple tool to proceed the data set from the raw text to the processed *scipy.sparse* matrix, which supports pretty large and high dimensional data set in practice (more than 10-million-feature data set):
+
+```shell
+python -u process_data.py -p 2 -b 10 -n 1000 -f fm data/XXX.txt
+=================================================================
+-p: # of threads used in processing
+-b: # of lines processed in a thread
+-n: the maximum # of features for the raw data set
+-f: should be "fm" or "ffm" indicating the format of the raw text data, the "fm" stores one sample in a line as "feature_id:value", while the "ffm" has "field_id:feature_id:value".
+=================================================================
+```
+
+Then you could refer to the demo notebook to do your own experiments on other data sets ^ ^
 
 
 
 ## Acknowledgement
 
-This work was mainly done while the first author Zifeng Wang did a research internship at [Noah's Ark Lab, Huawei](http://www.noahlab.com.hk/). We especially thank the insights and advice from Professor [Chih-Jen Lin](https://www.csie.ntu.edu.tw/~cjlin/) for the theory and writing of this work.
+This work was mainly done while the first author Zifeng Wang did a research internship at [Noah's Ark Lab, Huawei](http://www.noahlab.com.hk/). 
+
+We especially thank the insights and advice from Professor [Chih-Jen Lin](https://scholar.google.com/citations?hl=zh-CN&user=SLMkts8AAAAJ) for the theory and writing of this work.
