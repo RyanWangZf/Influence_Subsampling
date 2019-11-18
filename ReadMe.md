@@ -45,7 +45,9 @@ The different between them can be shown as the image below:
 
 
 
-<img src="https://github.com/RyanWangZf/Influence_Subsampling/blob/master/figure/fig1.png", width=375>
+<img src="https://github.com/RyanWangZf/Influence_Subsampling/blob/master/figure/fig1.png", width=375/>
+
+
 
 ![fig1](https://github.com/RyanWangZf/Influence_Subsampling/blob/master/figure/fig1.png)
 
@@ -61,9 +63,13 @@ The different between them can be shown as the image below:
 
 The main process of doing subsampling is as follows:
 
+
+
 ![fig2](https://github.com/RyanWangZf/Influence_Subsampling/blob/master/figure/fig2.png)
 
-<img src="https://github.com/RyanWangZf/Influence_Subsampling/blob/master/figure/fig2.png", width=375>
+
+
+<img src="https://github.com/RyanWangZf/Influence_Subsampling/blob/master/figure/fig2.png", width=375/>
 
 ## Usage & Demo
 
