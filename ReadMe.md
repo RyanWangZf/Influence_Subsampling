@@ -1,6 +1,6 @@
-# Unweighted Influence Data Subsampling
+# Unweighted Influence Data Subsampling (UIDS)
 
-This repository provides a numpy and scipy based implementation on *Unweighted Influence Data Subsampling* (UIDS) on the Logistic Regression model. The UIDS can achieve good result when the data set quality is not good, such as noisy labels, or distribution shift between training and test set, by dropping several bad cases.
+This repository provides a numpy and scipy based implementation on *Unweighted Influence Data Subsampling* (UIDS) on the Logistic Regression model. The UIDS can achieve good result when the data set quality is not good, such as noisy labels, or there is distribution shift between training and test set, by dropping several bad cases.
 
 ## Paper
 
@@ -10,9 +10,11 @@ Zifeng Wang 1, Hong Zhu 2, Zhenhua Dong 2, Xiuqiang He 2, Shao-Lun Huang 1
 
 1 Tsinghua-Berkeley Shenzhen Institute, 2 Noah's Ark Lab, Huawei
 
-34th AAAI Conference on Artificial Intelligence (AAAI), 2020
+*34th AAAI Conference on Artificial Intelligence (AAAI)*, 2020
 
 
+
+------
 
 If you find this work interesting or helpful for your research, please consider citing this paper and give your star ^ ^
 
@@ -31,8 +33,11 @@ If you find this work interesting or helpful for your research, please consider 
 
 
 
+## Intuition
+
+In practice, it is common that some of the collected data are not good or even harmful for our model. Subsampling tries to build a tool to quantify each data’s quality, thereby keeping good examples and dropping bad examples to improve model’s generalization ability. Previous works concentrate on *Weighted* subsampling, that is, trying to maintain the model performance when dropping several data. By contrast, our work attempts to obtain a superior model by subsampling. The different between them can be shown as the image below:
 
 
-## Demo
 
-todo
+![fig1](https://github.com/RyanWangZf/Influence_Subsampling/blob/master/figure/fig1.png)
+
