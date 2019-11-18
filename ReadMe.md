@@ -56,8 +56,7 @@ The different between them can be shown as the image below:
 - **(b)** if removing blue points in the red circle, the new decision boundary shifts from the left, while achieves better performance on the Te set
 
 ### Main Framework
-<br/>
-The main process of doing subsampling is as follows:
+<br/>The main process of doing subsampling is as follows:
 
 - **(a)** first train a model on the full data set
 
@@ -67,16 +66,14 @@ The main process of doing subsampling is as follows:
 
 - **(d)** doing subsampling and train a subset-model and the reduced data set
 
-  
-
 <p align="left"><img width="70%" src="figure/fig2.png" /></p>
 <br/>
 
 ### Other Interesting Stuff
-
 To accelerate the computation of Influence Function, we modify the original *scipy/optimize* module to realize the Hessian-free **Preconditioned Truncated Newton Method** [[Hsia et al., 2018]](http://proceedings.mlr.press/v95/hsia18a/hsia18a.pdf) for Logistic Regression.
 
 The details can be referred to **./optimize/optimize.py**.
+
 
 
 
