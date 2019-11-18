@@ -2,6 +2,8 @@
 
 This repository provides a numpy and scipy based implementation on *Unweighted Influence Data Subsampling* (UIDS) on the Logistic Regression model. The UIDS can achieve good result when the data set quality is not good, such as noisy labels, or there is distribution shift between training and test set, by dropping several bad cases.
 
+
+
 ## Paper & Citation
 
 **Less Is Better: Unweighted Data Subsampling via Influence Function**
@@ -46,11 +48,12 @@ By contrast, our work attempts to obtain a superior model by subsampling.
 The different between them can be shown as the image below:
 
 <br/>
-<p align="left"><img width="100%" src="figure/fig1.png" /></p>
--  **(a)** means if the blue points (training samples) within the red circle are removed, the new optimal decision boundary is still same as the former one
 
-- **(b)** if removing blue points in the red circle, the new decision boundary shifts from the left, while achieves better performance on the Te set
+<p align="left"><img width="100%" src="figure/fig1.png" /></p>
 <br/>
+
+- **(a)** means if the blue points (training samples) within the red circle are removed, the new optimal decision boundary is still same as the former one
+- **(b)** if removing blue points in the red circle, the new decision boundary shifts from the left, while achieves better performance on the Te set
 
 ### Main Framework
 <br/>
@@ -74,6 +77,8 @@ The main process of doing subsampling is as follows:
 To accelerate the computation of Influence Function, we modify the original *scipy/optimize* module to realize the Hessian-free **Preconditioned Truncated Newton Method** [[Hsia et al., 2018]](http://proceedings.mlr.press/v95/hsia18a/hsia18a.pdf) for Logistic Regression.
 
 The details can be referred to **./optimize/optimize.py**.
+
+
 
 ## Usage & Demo
 
