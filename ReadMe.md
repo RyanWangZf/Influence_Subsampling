@@ -33,7 +33,9 @@ If you find this work interesting or helpful for your research, please consider 
 
 
 
-## Intuition Demonstration
+## Introduction
+
+### Intuition Demonstration
 
 In practice, it is common that some of the collected data are not good or even harmful for our model. Subsampling tries to build a tool to quantify each data’s quality, thereby keeping good examples and dropping bad examples to improve model’s generalization ability. Previous works concentrate on *Weighted* subsampling, that is, trying to maintain the model performance when dropping several data. 
 
@@ -42,6 +44,8 @@ By contrast, our work attempts to obtain a superior model by subsampling.
 The different between them can be shown as the image below:
 
 
+
+<img src="https://github.com/RyanWangZf/Influence_Subsampling/blob/master/figure/fig1.png", width=375>
 
 ![fig1](https://github.com/RyanWangZf/Influence_Subsampling/blob/master/figure/fig1.png)
 
@@ -53,11 +57,13 @@ The different between them can be shown as the image below:
 
 
 
+### Main Framework
+
 The main process of doing subsampling is as follows:
 
 ![fig2](https://github.com/RyanWangZf/Influence_Subsampling/blob/master/figure/fig2.png)
 
-
+<img src="https://github.com/RyanWangZf/Influence_Subsampling/blob/master/figure/fig2.png", width=375>
 
 ## Usage & Demo
 
