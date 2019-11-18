@@ -2,7 +2,7 @@
 
 This repository provides a numpy and scipy based implementation on *Unweighted Influence Data Subsampling* (UIDS) on the Logistic Regression model. The UIDS can achieve good result when the data set quality is not good, such as noisy labels, or there is distribution shift between training and test set, by dropping several bad cases.
 
-## Paper
+## Paper & Citation
 
 **Less Is Better: Unweighted Data Subsampling via Influence Function**
 
@@ -46,7 +46,8 @@ By contrast, our work attempts to obtain a superior model by subsampling.
 The different between them can be shown as the image below:
 
 <br/>
-<p align="center"><img width="100%" src="figure/fig1.png" /></p>
+<p align="left"><img width="100%" src="figure/fig1.png" /></p>
+
 -  **(a)** means if the blue points (training samples) within the red circle are removed, the new optimal decision boundary is still same as the former one
 
 - **(b)** if removing blue points in the red circle, the new decision boundary shifts from the left, while achieves better performance on the Te set
@@ -66,7 +67,7 @@ The main process of doing subsampling is as follows:
 
   
 
-<p align="center"><img width="70%" src="figure/fig2.png" /></p>
+<p align="left"><img width="70%" src="figure/fig2.png" /></p>
 
 <br/>
 
@@ -74,7 +75,24 @@ The main process of doing subsampling is as follows:
 
 ## Usage & Demo
 
-todo
+### For simple Demo on MNIST and Breast-cancer
+
+We have prepared simple demo on Logistic Regression and SVM, see in **Demo_on_Logistic_Regression.ipynb** and **Demo_on_SVM.ipynb**
+
+The experiment results would be shown as following. We have the *Sig-UIDS* obtain ACC and AUC much better than the Full-set-model and subset-model obtained by random sampling.
+
+```shell
+============================================================
+MNIST: Result Summary on Te (ACC and AUC)
+[SigUIDS]  acc 0.984281, auc 0.998802 # 4994
+[Random]   acc 0.900139, auc 0.950359 # 4995
+[Full]     acc 0.916782, auc 0.961824 # 8325
+============================================================
+```
+
+### For other data sets
+
+#### TODO
 
 
 
