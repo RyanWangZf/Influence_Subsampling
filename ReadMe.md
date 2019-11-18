@@ -43,33 +43,20 @@ By contrast, our work attempts to obtain a superior model by subsampling.
 
 The different between them can be shown as the image below:
 
-
-
-<img src="https://github.com/RyanWangZf/Influence_Subsampling/blob/master/figure/fig1.png", width=375/>
-
-
-
-![fig1](https://github.com/RyanWangZf/Influence_Subsampling/blob/master/figure/fig1.png)
-
-
-
+<br/>
+<p align="center"><img width="100%" src="figure/fig1.png" /></p>
 - **(a)** means if the blue points (training samples) within the red circle are removed, the new optimal decision boundary is still same as the former one
 
 - **(b)** if removing blue points in the red circle, the new decision boundary shifts from the left, while achieves better performance on the Te set
-
-
+<br/>
 
 ### Main Framework
-
+<br/>
 The main process of doing subsampling is as follows:
+<p align="center"><img width="80%" src="figure/fig2.png" /></p>
+<br/>
 
 
-
-![fig2](https://github.com/RyanWangZf/Influence_Subsampling/blob/master/figure/fig2.png)
-
-
-
-<img src="https://github.com/RyanWangZf/Influence_Subsampling/blob/master/figure/fig2.png", width=375/>
 
 ## Usage & Demo
 
