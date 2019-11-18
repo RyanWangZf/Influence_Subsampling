@@ -69,7 +69,11 @@ The main process of doing subsampling is as follows:
 <p align="left"><img width="70%" src="figure/fig2.png" /></p>
 <br/>
 
+### Other Interesting Stuff
 
+To accelerate the computation of Influence Function, we modify the original *scipy/optimize* module to realize the Hessian-free **Preconditioned Truncated Newton Method** [[Hsia et al., 2018]](http://proceedings.mlr.press/v95/hsia18a/hsia18a.pdf) for Logistic Regression.
+
+The details can be referred to **./optimize/optimize.py**.
 
 ## Usage & Demo
 
@@ -93,8 +97,9 @@ MNIST: Result Summary on Te (ACC and AUC)
 For other data sets, we provide a simple tool to proceed the data set from the raw text to the processed *scipy.sparse* matrix, which supports pretty large and high dimensional data set in practice (more than 10-million-feature data set):
 
 ```shell
-python -u process_data.py -p 2 -b 10 -n 1000 -f fm data/XXX.txt
 =================================================================
+python -u process_data.py -p 2 -b 10 -n 1000 -f fm data/XXX.txt
+Args:
 -p: # of threads used in processing
 -b: # of lines processed in a thread
 -n: the maximum # of features for the raw data set

@@ -10,7 +10,7 @@ import argparse
 from scipy import sparse
 
 """
-python process_ffm.py -p 4 -b 1000000 a.txt b.txt c.txt
+python process_data.py -p 4 -b 1000000 a.txt b.txt c.txt
 """
 parser = argparse.ArgumentParser(description="python process_data.py -p 4 -b 1000000 a.txt b.txt c.txt")
 parser.add_argument("--process","-p",type=int,default=2)
