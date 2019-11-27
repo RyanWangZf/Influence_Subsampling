@@ -12,7 +12,7 @@ This repository provides a numpy and scipy based implementation on *Unweighted I
 
 Zifeng Wang 1, Hong Zhu 2, Zhenhua Dong 2, Xiuqiang He 2, Shao-Lun Huang 1
 
-1 Tsinghua-Berkeley Shenzhen Institute, 2 Noah's Ark Lab, Huawei
+1 Tsinghua-Berkeley Shenzhen Institute, Tsinghua University 2 Noah's Ark Lab, Huawei
 
 *34th AAAI Conference on Artificial Intelligence (AAAI)*, 2020
 
