@@ -25,7 +25,7 @@ If you find this work interesting or helpful for your research, please consider 
 
 
 ````latex
-@inproceedings{wang2020influence,
+@inproceedings{wang2019less,
   title={Less Is Better: Unweighted Data Subsampling via Influence Function},
   author={Wang, Zifeng and Zhu, Hong and Dong, Zhenhua and He, Xiuqiang and Huang, Shao-Lun},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)},
