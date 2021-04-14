@@ -10,15 +10,7 @@ This repository provides a numpy and scipy based implementation on *Unweighted I
 
 [**Less Is Better: Unweighted Data Subsampling via Influence Function**](https://arxiv.org/abs/1912.01321)
 
-Zifeng Wang 1, Hong Zhu 2, Zhenhua Dong 2, Xiuqiang He 2, Shao-Lun Huang 1
 
-1 Tsinghua-Berkeley Shenzhen Institute, Tsinghua University 2 Noah's Ark Lab, Huawei
-
-*34th AAAI Conference on Artificial Intelligence (AAAI)*, 2020
-
-
-
-------
 
 If you find this work interesting or helpful for your research, please consider citing this paper and give your star ^ ^
 
@@ -116,7 +108,5 @@ Then you could refer to the demo notebook to do your own experiments on other da
 
 
 ## Acknowledgement
-
-This work was mainly done while the first author Zifeng Wang did a research internship at [Noah's Ark Lab, Huawei](http://www.noahlab.com.hk/). 
 
 We especially thank the insights and advice from Professor [Chih-Jen Lin](https://scholar.google.com/citations?hl=zh-CN&user=SLMkts8AAAAJ) for the theory and writing of this work.
